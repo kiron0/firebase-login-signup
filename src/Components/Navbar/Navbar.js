@@ -71,7 +71,8 @@ const Navbar = () => {
                 Login
               </NavLink>
             )}
-            {currentUser?.reloadUserInfo?.photoUrl ? (
+            {
+            currentUser?.reloadUserInfo?.photoUrl ? (
               <NavLink to="/">
                 <img
                   src={currentUser?.reloadUserInfo?.photoUrl}
@@ -81,7 +82,8 @@ const Navbar = () => {
               </NavLink>
             ) : (
               <span></span>
-            )}
+            )
+            }
           </ul>
         </div>
       </nav>
