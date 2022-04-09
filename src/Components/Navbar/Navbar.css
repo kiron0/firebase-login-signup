@@ -1,0 +1,180 @@
+.header{
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0px 4px 50px rgba(0, 0, 0, 0.1);
+  padding: 0 10%;
+  font-family: "Teko", sans-serif;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.logout-button {
+  border: none;
+  margin-left: 15px;
+  font-size: 24px;
+  font-family: "Teko", sans-serif;
+  background-color: transparent;
+  color: #1e90c2;
+  cursor: pointer;
+}
+
+.logout-button:hover {
+  color: #1b4388;
+}
+
+.link {
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 24px;
+  color: #1e90c2;
+  transition: color ease-in-out 300ms;
+}
+
+.link:hover {
+  color: #1b4388;
+}
+
+.active-link {
+  text-decoration: none;
+  margin-left: 15px;
+  font-size: 24px;
+  transition: color ease-in-out 300ms;
+  color: #1b4388;
+}
+
+.logo-container h2{
+  text-decoration: none;
+}
+
+.icon{
+  color: #1b4388;
+}
+
+.header-title{
+  color: #1b4388;
+  text-decoration: none;
+  margin-left: -53%;
+  font-size: 28px;
+}
+
+.checkbtn {
+  font-size: 25px;
+  color: #000;
+  float: left;
+  line-height: 80px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+.profile-pic{
+  border: 2px solid #1e90c2;
+  margin: -.5rem 1rem;
+  width: 50px;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 490px) {
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .navbar-items {
+    display: block;
+    text-align: center;
+  }
+  nav ul {
+    position: absolute;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.972);
+    top: 80px;
+    left: -120%;
+    transition: all 0.5s;
+    padding: 0px 20px 35px 0px;
+    overflow: hidden;
+  }
+  .link {
+    display: block;
+    line-height: 40px;
+  }
+  .nav-link {
+    font-size: 18px;
+    color: rgb(77, 72, 72);
+  }
+  .checkbtn {
+    display: block;
+    color: rgb(77, 72, 72);
+  }
+  .nav-bar-icon{
+    font-size: 30px;
+    margin-right: -1rem;
+    margin-top: 30px;
+    color: #1b4388;
+    background: transparent;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+    .icon{
+      font-size: 2rem;
+      margin-left: -20%;
+    }
+    .header-title{
+      font-size: 21px;
+      margin-left: 0%;
+      font-weight: 700;
+    }
+    .profile-pic{
+      margin: .5rem auto;
+      display: block;
+    }
+    .logout-button{
+      margin: 0 auto;
+      display: block;
+    }
+}
+
+
+@media screen and (min-width: 776px) {
+  .icon{
+    font-size: 2rem;
+    margin-left: -20%;
+  }
+  .header-title{
+    margin-left: 0%;
+    font-size: 28px;
+  }  
+  .profile-pic{
+    margin: -1rem 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .icon{
+  font-size: 2.5rem;
+  margin-left: -15%;
+  }
+  .header-title{
+    margin-left: -0%;
+    font-size: 35px;
+  } 
+  .profile-pic{
+    margin: -1rem 1rem;
+  }
+}
