@@ -4,8 +4,7 @@
 
 ## The following things in this project:
 
-* Login Form
-* Sign Up Form
+* Login & Sign Up Form
 * Login With Gmail & Password
 * Sign Up With Gmail & Password
 * Login With Google
