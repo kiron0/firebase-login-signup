@@ -16,7 +16,6 @@ const Navbar = () => {
         setCurrentUser({});
       }
     });
-
     return () => unsubscribe;
   }, []);
 
